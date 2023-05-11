@@ -12,3 +12,7 @@ terraform {
 resource "null_resource" "example" {
 
 }
+
+module "foo" {
+  source = "./modules/foo"
+}
