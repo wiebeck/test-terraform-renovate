@@ -11,7 +11,7 @@ provider "registry.terraform.io/hashicorp/null" {
 
 provider "registry.terraform.io/hashicorp/random" {
   version     = "3.5.0"
-  constraints = ">= 3.5.0"
+  constraints = "3.5.0"
   hashes = [
     "h1:/sx2aDsQhfFuTvjMqiVs0u84ncBpDxdGTz+AbVn4Fpw=",
     "zh:0d95ed87398d5592e9c699f658eeef04e945945c996174222071c217e46f3c76",
