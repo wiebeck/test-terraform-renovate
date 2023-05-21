@@ -15,6 +15,10 @@ rule "terraform_naming_convention" {
   enabled = true
 }
 
+role "terraform_required_providers" {
+  enabled = false
+}
+
 // we do not want to enforce specifying a required Terraform version as we usually run the configs with the latest version
 rule "terraform_required_version" {
   enabled = false
