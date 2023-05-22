@@ -3,6 +3,9 @@ on:
   push:
     branches: [main]
 
+permissions:
+  checks: write
+
 jobs:
   lint:
     uses: riege/code-quality/.github/workflows/tflint.yml@tflint
