@@ -7,6 +7,6 @@ on:
 
 jobs:
   lint:
-    uses: riege/code-quality/.github/workflows/tflint.yml@advanced-terraform
+    uses: riege/code-quality/.github/workflows/tflint.yml@main
     permissions:
       checks: write
