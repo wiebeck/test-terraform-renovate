@@ -8,7 +8,4 @@ permissions:
 
 jobs:
   lint:
-    uses: riege/code-quality/.github/workflows/tflint.yml@tflint
-    # the following lines will be removed once https://github.com/riege/code-quality/pull/43 gets merged
-    with:
-      CODEQUALITY_REF: tflint
+    uses: riege/code-quality/.github/workflows/tflint.yml@main
