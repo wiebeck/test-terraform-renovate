@@ -3,7 +3,7 @@ terraform {
     random = {
       source = "hashicorp/random"
     }
-    // an unused provider in a child module
+    # an unused provider in a child module
     local = {
       source  = "hashicorp/local"
       version = "2.4.0"
@@ -13,7 +13,7 @@ terraform {
 
 output "server_id" {
   value = random_id.server.hex
-  description = "The server id"
+  # this should give a tflint error because we require descriptions for every output
 }
 
 resource "random_id" "server" {
