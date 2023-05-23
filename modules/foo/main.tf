@@ -1,8 +1,12 @@
 terraform {
   required_providers {
     random = {
-      source  = "hashicorp/random"
-      version = "3.5.0"
+      source = "hashicorp/random"
+    }
+    // an unused provider in a child module
+    local = {
+      source  = "hashicorp/local"
+      version = "2.4.0"
     }
   }
 }
