@@ -13,7 +13,7 @@ terraform {
 
 output "server_id" {
   value = random_id.server.hex
-  # this should give a tflint error because we require descriptions for every output
+  description = "The server id"
 }
 
 resource "random_id" "server" {
